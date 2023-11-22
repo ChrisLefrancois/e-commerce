@@ -8,6 +8,9 @@ const cardSchema = new Schema({
   price: {type: Number, required: true},
   graded: {type: String, enum: ['Graded', 'Raw'], required: true},
   category: {type: String, required: true}
+},
+ {
+  timestamps: true
 });
 
 // model
